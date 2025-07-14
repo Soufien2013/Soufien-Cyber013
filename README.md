@@ -1,106 +1,96 @@
-Soufien Cyber Tool
-This script is for information gathering and learning cyber security.
-Author: Soufien Cyber Amri013 🎩
+🔐 Soufien Cyber Amri013 Tool
+هو تطبيق Python بواجهة رسومية مبنية باستخدام مكتبة Tkinter، موجه لمتخصصي الأمن السيبراني بغرض التعلم والاختبار القانوني.
+يوفر مجموعة أدوات لجمع المعلومات واختبار ثغرات تطبيقات الويب، إلى جانب محاكي لهجوم DDoS لأغراض تدريبية فقط.
+Note :  🔐 Default Credentials:
+Username: soufien013
 
+Password: 013
 
-_________________________
-User Login 
-    username : soufien013
-    password : 013
-    ____________________
+🛠 الأدوات المضمنة:
+Whois, Nslookup, Dig, Dnsenum, Amass, Sublist3r, theHarvester
 
+WhatWeb, Curl, Nmap, Ping
 
-# Soufien Cyber Tool
+SQLMap (لاختبار SQL Injection)
 
+Hydra (للهجوم على الخدمات بكلمات مرور)
 
+Gobuster (لكشف مسارات السيرفر)
 
+XSS Test (اختبار بسيط لانعكاس XSS)
 
+🧨 أداة DDoS Simulation (بسرعتين fast / slow)
 
+💡 مميزات إضافية:
+فحص الوصول للموقع قبل تنفيذ الأمر.
 
-السكريبت هذا عملتو للناس يلي مهمتمة بفحص المواقع و البحث على
-الثغرات الامنية و تحليل البيانات جمعت فيه اقوى ادوات
- information gathering 
-الموجودة على توزيعة كالي لينيكسبواسطة  أدات واحدة ذو واجهة رسومية سهلة الاستعمال  تقدر  تستغلها في جميع انواع الفحوصات الامنية
-بدون الحاجة في كل مرة لكتابة ترمينال 
-الادوات الموجودة
-Nmap
-Sqlmap = فيها sql injection 
-ping
-nikto
-nslookup
-sublist3r
-amas
-Ddos attack : تحذير لا تستعملها على مواقع بدون اذن مسبق لانها حتى لو كانت من طرف شخص واحد تندرج ضمن الهجمات السبرانية 
+دعم sudo لبعض الأدوات.
 
+دعم إدخال مخصص للـtarget.
 
+رسائل تحذير قبل تشغيل أي هجوم.
 
-تم تطوير السكريبت بواسطة لغة $
- python $
+⚠️ تنويه: الأداة للأغراض التعليمية فقط ويُمنع استخدامها في اختبارات حقيقية دون إذن صريح من صاحب الموقع أو السيرفر.
 
-
-
-طريقة التشغيل
-how to run on lunix
-
-
-افتح ترمنال و اكتب
-
-sudo apt update && sudo apt upgrade -y
-
-بعد اكمال العملية  اكتب
-
+📝 طريقة التثبيت:
+bash
+Copy
+Edit
+sudo apt update
 sudo apt install python3 python3-pip -y
+pip3 install pillow requests
+git clone https://github.com/Soufien2013/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+python3 cyber_gui.py
+_________________________________________________________________________________________________________
+A Python GUI Toolkit for Cybersecurity learning and legal testing, built using Tkinter.
+This tool brings together several information-gathering commands, vulnerability testing utilities, and a DDoS simulator, all wrapped in a user-friendly interface.
 
-بعد اكمال العملية 
-تحقق من التثبيت افتح ترمنال و اكتب 
+🔧 Features:
+Tools Included:
 
-python3 --version
-pip3 --version
+Whois, Nslookup, Dig, Dnsenum, Amass, Sublist3r, theHarvester
 
-لو رجعلك ارقام الاصدارات يعني تم تثبيتهم بنجاح
+WhatWeb, Curl, Nmap, Ping
 
-Python 3.11.2
-pip 23.2.1
+SQLMap (SQL Injection testing)
 
+Hydra (Brute force)
 
-كل شيء جيد الان بعد تحميل السكريبت
-ما عليك سوى البحث عن مسار السكريبت و تشغيله كيف تم العملية
+Gobuster (Directory brute force)
 
-مثلا السكريبت موجود في مسار
-/home/kali/Document
+XSS Test (Reflected XSS testing)
 
-نكتب في ترمنال
+🧨 DDoS Attack Simulation (fast/slow)
 
-cd /home/kali/Document
+Functionalities:
 
-من بعد نكتب
-ls 
-رح يظهر لنا الملف الان نكتب من بعدها اسم الملف كما هو مع التأكد من ان صيغة الملف مكتوبة مثلا 
-soufien.py
- نكتب
+Target connectivity check before running commands.
 
-python3 soufien.py
+Optional sudo support for tools requiring root privileges.
 
-الان يفتح معاك البرنامج بشكل عادي
+Interactive logging for output.
 
-فالمرات الاخرى ما تحتاج انك تمر بكل هذي الخطوات فقط افتح ترمنال
-و كتب
+Login window with username & password (customizable).
 
-python3 soufien.py
-و سوف يفتح معك مباشرة
+Warning prompts before potentially dangerous simulations.
 
-و السلام عليكم
+⚠️ DISCLAIMER:
+This tool is for educational purposes only. Never use it on networks or websites you do not own or have permission to test.
 
-
-
-
-
+💻 Installation:
+bash
+Copy
+Edit
+sudo apt update
+sudo apt install python3 python3-pip -y
+pip3 install pillow requests
+git clone https://github.com/Soufien2013/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+python3 cyber_gui.py
 
 
+🔐 Default Credentials:
 
-
-
-
-هذا الكل لأغراض تعليمية و للحماية، ما نتحمّلش أي مسؤولية في استعمال غير قانوني.
-
-Author: Soufien Cyber Amri013 🎩
+Username: soufien013
+Password: 013
