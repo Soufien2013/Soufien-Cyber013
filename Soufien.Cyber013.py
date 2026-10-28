@@ -231,8 +231,7 @@ def add_social_icons(parent_frame):
     social_frame = tk.Frame(container, bg="black")
     social_frame.pack()
 
-    fb_url = "https://www.facebook.com/stinx.xi/"
-    gh_url = "https://github.com/Soufien2013"
+
 
     fb_image_url = "https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png"
     fb_data = urllib.request.urlopen(fb_image_url).read()
